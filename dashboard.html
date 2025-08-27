@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Asset Portal - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Asset Tag veya İsim ile ara...">
+        </div>
+        <div class="assets-container">
+            <table id="assetsTable">
+                <thead>
+                    <tr>
+                        <th>Asset Tag</th>
+                        <th>Kullanıcı</th>
+                        <th>Departman</th>
+                        <th>Model</th>
+                        <th>Son Güncelleme</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5CG2522PZX</td>
+                        <td>Samet Comak</td>
+                        <td>IT</td>
+                        <td>HP EliteBook 840 G8</td>
+                        <td>2025-08-26</td>
+                        <td>Aktif</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
