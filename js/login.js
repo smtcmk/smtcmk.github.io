@@ -1,15 +1,17 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
     
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    // Basic authentication for testing
-    if (username === 'admin' && password === 'admin') {
-        alert('Login successful!');
-        // TODO: Redirect to dashboard or main page
-        // window.location.href = 'dashboard.html';
-    } else {
-        alert('Invalid credentials. Please try again.');
-    }
+    loginForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        if (username === 'admin' && password === 'admin') {
+            alert('Login successful');
+            window.location.href = 'dashboard.html';
+        } else {
+            alert('Invalid username or password');
+        }
+    });
 });
